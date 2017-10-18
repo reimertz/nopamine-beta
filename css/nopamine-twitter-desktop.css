@@ -1,0 +1,61 @@
+/* Hide Sidebar User Profile # of Tweets, Followers Likes   */
+.ProfileCardStats-statValue {
+  display: none !important;
+}
+
+/* Hide User Profile # of Tweets, Followers Likes */
+.ProfileNav-value {
+  font-size: 0 !important;
+}
+
+.ProfileNav-value:before {
+  content: '◯' !important;
+  font-size: 18px !important;
+}
+
+/* Hides a tweest # of Comments, Retweets and Likes   */
+.ProfileTweet-actionCountForPresentation {
+  font-size: 0 !important;
+}
+
+.ProfileTweet-actionCountForPresentation:not(:empty):before {
+  content: '◯' !important;
+  font-size: 12px !important;
+}
+
+/* Hides a Users # of followers you know  */
+.ProfileUserList-permalink {
+  font-size: 0 !important;
+}
+
+.ProfileUserList-permalink:before {
+  content: 'Followers you know' !important;
+  font-size: 14px !important;
+}
+
+/* Hides a Users # of uploaded photos and videos  */
+.PhotoRail-headingWithCount {
+  font-size: 0 !important;
+}
+
+.PhotoRail-headingWithCount:before {
+  content: 'Photos and videos' !important;
+  font-size: 14px !important;
+}
+
+/* Hides an opened tweets # retweets and likes */
+.stat-count > a > strong {
+  display: inline-block !important;
+  opacity: 0 !important;
+  width: 0 !important;
+}
+
+/* Hides trending topics amount of tweets  */
+.trend-item-stats {
+  display: none !important;
+}
+
+/* Hides Impression Module 🤢  */
+.TweetImpressionsModule {
+  display: none !important;
+}

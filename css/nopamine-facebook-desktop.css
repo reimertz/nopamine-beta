@@ -1,0 +1,89 @@
+/* Replace {Home #} button in Header with {Home} */
+[data-click='home_icon'] a > div > div {
+  font-size: 0px !important;
+}
+
+[data-click='home_icon'] a > div > div:before {
+  content: '◯' !important;
+  font-size: 10px !important;
+}
+
+/* Hide # of Messages, Friend Requests, Notifications etc. */
+.jewelCount > span:nth-child(1) {
+  font-size: 0px !important;
+}
+
+.jewelCount > span:nth-child(1):before {
+  content: '◯' !important;
+  font-size: 10px !important;
+}
+
+/* Hide Posts {Name}, {Name} and X others */
+[aria-label='See who reacted to this'] + a {
+  display: none !important;
+}
+
+/* Hide a post Comments # of likes*/
+.UFICommentLikeButton {
+  display: none !important;
+}
+
+.UFIReplySocialSentenceLinkText {
+  font-size: 0px !important;
+}
+
+/* Replaces {# of replies} with more replies */
+.UFIReplySocialSentenceLinkText:before {
+  content: 'more replies' !important;
+  font-size: 13px !important;
+}
+
+/* Hide User Profile Tab # of mutual friends */
+[data-tab-key='friends'] span {
+  display: none !important;
+}
+
+/* Hide User Friends Page # of Friends */
+[name='All Friends'] span:nth-child(2) {
+  display: none !important;
+}
+
+/* Hide User Friends Page aa profiles # of mutual friends */
+[data-testid='friend_list_item'] .uiProfileBlockContent a:nth-child(2) {
+  display: none !important;
+}
+
+/* Hide User Side columns # of friends */
+.fbTimelineTwoColumn span > a[href$='/friends'] {
+  display: none !important;
+}
+
+/* Replace # of friends to See mutual friends */
+.fbTimelineTwoColumn a[href$='/friends_mutual'] {
+  font-size: 0;
+}
+
+.fbTimelineTwoColumn a[href$='/friends_mutual']:before {
+  content: '(Mutual Friends)' !important;
+  font-size: 14px !important;
+}
+
+/* Replace sidebar # with ◯ */
+#pagelet_navigation .countValue {
+  font-size: 0 !important;
+}
+
+#pagelet_navigation .countValue:before {
+  content: '◯' !important;
+  font-size: 11px !important;
+}
+
+/* Hide Pages Likes, Views etc and only show # on hover */
+#homepage_panel_pagelet_content div > div:nth-child(5) {
+  opacity: 0 !important;
+  transition: opacity 250ms !important;
+}
+
+#homepage_panel_pagelet_content:hover div > div:nth-child(5) {
+  opacity: 1 !important;
+}

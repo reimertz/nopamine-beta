@@ -1,0 +1,38 @@
+/* Hide Sidebar User Profile # of Tweets, Followers Likes   */
+.ProfileCardStats-statValue {
+  display: none !important;
+}
+
+/* Hide User Profile # of Tweets, Followers Likes */
+[href$='/followers'] span > span:first-child,
+[href$='/following'] span > span:first-child {
+  display: none !important;
+}
+
+/* Hides a tweets # of Comments, Retweets and Likes   */
+[aria-label='Tweet actions'] svg + span {
+  font-size: 0 !important;
+  position: relative !important;
+}
+
+[aria-label='Tweet actions'] svg + span:not(:empty):before {
+  content: '◯' !important;
+  font-size: 1rem !important;
+  padding-left: 0.5rem !important;
+}
+
+/* Hides a Users # of followers you know  */
+
+/* Hides a Users # of uploaded photos and videos  */
+
+/* Hides an opened tweets # retweets and likes */
+[data-testid='tweetDetail'] > div:nth-child(6) a span > div:first-child {
+  display: none !important;
+}
+
+/* Hides trending topics amount of tweets  */
+[data-testid='trend'] > div > div:nth-child(2) {
+  display: none !important;
+}
+
+/* Hides Impression Module 🤢  */

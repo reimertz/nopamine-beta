@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Nopamine Beta",
+  "version": "0.0.1",
+  "description":
+    "Display focus indicator for the active intractable element in a webpage.",
+  "author": "Piérre Reimertz",
+  "homepage_url": "https://twitter.com/reimertz",
+  "icons": {
+    "16": "icons/enabled/16.png",
+    "48": "icons/enabled/48.png",
+    "128": "icons/enabled/128.png"
+  },
+  "offline_enabled": true,
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.facebook.com/*"],
+      "css": ["css/nopamine-facebook-desktop.css"]
+    },
+    {
+      "matches": ["https://twitter.com/*"],
+      "css": ["css/nopamine-twitter-desktop.css"]
+    },
+    {
+      "matches": ["https://mobile.twitter.com/*"],
+      "css": ["css/nopamine-twitter-mobile.css"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icons/enabled/48.png"
+  },
+  "web_accessible_resources": ["icons/disabled/48.png"]
+}
