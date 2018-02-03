@@ -1,0 +1,9 @@
+#twitter-widget-0::shadow .TweetAction-stat {
+  font-size: 0px !important;
+}
+
+#twitter-widget-0::shadow .TweetAction-stat:before {
+  content: '◯' !important;
+  font-size: 14px !important;
+  padding-left: 5px;
+}
