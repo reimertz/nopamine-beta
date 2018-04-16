@@ -1,3 +1,4 @@
+
 /* Hide Sidebar User Profile # of Tweets, Followers Likes   */
 .ProfileCardStats-statValue {
   display: none !important;
@@ -21,10 +22,6 @@
   padding-left: 0.5rem !important;
 }
 
-/* Hides a Users # of followers you know  */
-
-/* Hides a Users # of uploaded photos and videos  */
-
 /* Hides an opened tweets # retweets and likes */
 [data-testid='tweetDetail'] > div:nth-child(6) a span > div:first-child {
   display: none !important;
@@ -35,4 +32,25 @@
   display: none !important;
 }
 
-/* Hides Impression Module 🤢  */
+/* Hide a post Comments # of likes*/
+div[count],
+span[count] {
+  font-size: 0px !important;
+}
+div[count]:before,
+span[count]:before {
+	content: '◯' !important;
+  font-size: 1rem !important;
+  margin-left: 0.25rem;
+}
+
+/* Hide User Menu # of friends and Followers in Menu */
+a[href$="/followers"] div:nth-child(1),
+a[href$="/following"] div:nth-child(1) {
+	display: none;
+}
+
+/* Hide Promoted By */
+[gswfh9d] {
+    display: none !important;
+}

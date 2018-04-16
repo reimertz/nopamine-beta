@@ -19,8 +19,12 @@
       "css": ["css/embedded.css"]
     },
     {
-      "matches": ["https://*.facebook.com/*"],
+      "matches": ["https://www.facebook.com/*"],
       "css": ["css/nopamine-facebook-desktop.css"]
+    },
+    {
+      "matches": ["https://m.facebook.com/*"],
+      "css": ["css/nopamine-facebook-mobile.css"]
     },
     {
       "matches": ["https://twitter.com/*"],

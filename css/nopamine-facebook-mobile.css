@@ -1,0 +1,54 @@
+/* Replace {Home #} button in Header with {Home} */
+[data-click='home_icon'] a > div > div {
+  font-size: 0px !important;
+}
+
+[data-click='home_icon'] a > div > div:before {
+  content: '◯' !important;
+  font-size: 10px !important;
+}
+
+/* Hide # of Messages, Friend Requests, Notifications etc. */
+span[data-sigil="count"] {
+  font-size: 0px !important;
+  opacity: 0.75;
+}
+
+span[data-sigil="count"]:before {
+  content: '◯' !important;
+  font-size: 12px !important;
+}
+
+/* Hide ads */
+article[data-store*="is_sponsored.1"] {
+  display: none !important;
+}
+
+/* Hide like, heart, wow count */
+div[data-sigil="reactions-sentence-container"] > div {
+  display: none !important;
+}
+
+/* Hide like, heart, wow count in post popup */
+div[aria-label*=" left reactions "] {
+  display: none !important;
+}
+
+/* Hide like, heart, wow count on comment*/
+a[href^="/ufi/reaction/profile/"] > span:last-child {
+  display: none !important;
+}
+
+/* Hide # {Comments} # Shares */
+div[data-sigil="reactions-bling-bar"] > div:nth-child(2) > span:nth-child(1) {
+  font-size: 0px !important;
+}
+
+div[data-sigil="reactions-bling-bar"] > div:nth-child(2) > span:nth-child(2) {
+  display: none !important;
+}
+
+div[data-sigil="reactions-bling-bar"] > div:nth-child(2) > span:nth-child(1):before {
+  content: 'Comments and Shares' !important;
+  font-size: 14px !important;
+}
